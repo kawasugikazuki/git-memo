@@ -3,3 +3,19 @@
 
 デフォルトで追跡されているファイルのみ退避できる
 
+```
+git stash list
+```
+一覧を見る
+```
+git stash apply stash@{0}
+```
+元に戻す
+```
+git stash drop stash@{0}
+```
+applyだけだとlistに残るので消すことができる
+```
+git stash pop stash@{0}
+```
+元に戻すのとlistから消すのを同時にできる
